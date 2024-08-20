@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.width600{
+  max-width: 37.5rem;
+}
+
+.center{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 37.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+h1{
+  font-family: Montserrat, sans-serif;
+  color: rgb(87, 87, 87);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -3px;
+  margin-bottom: 2.5rem;
+}
+
+h2{
+  font-family: Montserrat, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 54px;
+  color: rgb(112, 112, 112);
+  margin-bottom: 2rem;
+}
+
+h3{
+  color: rgb(24, 25, 31);
+  font-family: Montserrat, sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 40px;
+  margin-bottom: 0.75rem;
+}
+
+p{
+  color: rgb(24, 25, 31);
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.brand-color{
+  color: rgb(251, 162, 79);
+}
+
+.btn{
+  border-radius: 100px;
+  box-shadow: 0px 2px 30px 0px rgba(252, 143, 73, 0.5);
+  background: linear-gradient(69.40deg, rgb(251, 162, 79) -6.919%,rgb(255, 30, 30) 144.985%);
+  color: #fff;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 1.5rem 2rem;
+  border: none;
+}
+
+/* global css ends */
+
+.banner{
+  margin: 5rem auto;
+}
+
+.banner-container{
+  justify-content: space-between;
+}
+
+.banner-text-container{
+  width: 130%;
+}
+
+.banner p{
+  margin-bottom: 3rem;
+  max-width: 444px;
+}
+
+.banner-img-container{
+  position: relative;
+}
+
+.banner-img-container .featured{
+  width: 135%;
+  margin: -75px -118px -43px -136px
+}
+
+.banner-img-container .decoration{
+  width: 60%;
+  height: 46%;
+  position: absolute;
+  right: 5%;
+  bottom: 2%;
+  z-index: -1;
+}
+/* banner section ends */
+/* about-me section starts */
+.about-me{
+  background: rgba(252, 143, 73, 0.1);
+  margin-bottom: 5rem;
+  overflow: clip;
+  position: relative;
+}
+
+.about-me>.container{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-me .about-me-img-container{
+  padding: 4rem 0 0 0;
+}
+
+.decorations .half-circle-bc,
+.decorations .half-circle,
+.decorations .dots-decoration{
+  position: absolute;
+}
+
+.decorations .bc-1{
+  top: -17%;
+  left: 2%;
+}
+
+.decorations .bc-2{
+  top: 2%;
+  right: 0%;
+  transform: rotate(-90deg);
+  opacity: 50%;
+}
+
+.decorations .wc-1{
+  top: -17%;
+  left: 12%;
+}
+
+.decorations .wc-2{
+  bottom: 17%;
+  left: 0%;
+}
+
+.about-me .about-me-text-container{
+  max-width: 28.125rem;
+}
+
+.about-me .about-me-text-container>P{
+  margin-bottom: 5rem;
+}
+
+/* about-me section ends */
+/* recipe section starts */
+.recipes-container{
+  gap: 1.75rem;
+}
+
+.recipe{
+  border-radius: 1.8rem;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 1.8rem;
+  margin: 2rem auto 5rem;
+}
+
+.recipe img{
+  width: 100%;
+  margin-bottom: 1.8rem;
+}
+/* recipe section ends */
+/* social section starts */
+.social-container{
+  justify-content: space-between;
+  max-width: 100%;
+  gap: 1.8rem;
+  padding: 4rem 10.25rem;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 1.8rem;
+}
+.social-info{
+  color: rgb(24, 25, 31);
+  font-family: Montserrat, sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 120%;
+  margin-bottom: 0.5rem;
+}
+/* social section ends */
+/* footer section starts */
+footer{
+  background: rgb(11, 13, 23);
+  margin-top: 5rem;
+  padding: 2rem 0 5rem;
+}
+footer p{
+  color: #fff;
+}
+/* footer section ends */
+
+/* Mobile device css starts */
+@media screen and (max-width:576px) {
+  .container{
+    max-width: 90%;
+  }
+
+  h1{
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+  }
+  
+  h2{
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 2rem;
+  }
+  
+  h3{
+    font-size: 28px;
+    margin-bottom: 0.75rem;
+  }
+
+  p{
+    font-size: 16px;
+  }
+
+  .banner-container{
+    flex-direction: column;
+  }
+
+  .banner-text-container{
+    width: 100%;
+  }
+
+  .banner p{
+    margin-bottom: 2rem;
+  }
+
+  .banner-img-container .featured {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-me>.container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-me .about-me-text-container{
+    padding-top: 4.2rem;
+    z-index: 1;
+  }
+
+  .about-me .about-me-text-container>P {
+    margin-bottom: 2rem;
+  }
+
+  .about-me-img-container .about-me-img img{
+    z-index: 1;
+    position: relative;
+    margin-bottom: -4px;
+    max-width: 100%;
+  }
+
+  .decorations .bc-1{
+    top: -7%;
+    
+  }
+
+  .decorations .bc-2{
+    top: 40%;
+    right: -16%;
+  }
+
+  .decorations .wc-1{
+    top: -7%;
+    left: 35%;
+    z-index: 0;
+  }
+
+  .decorations .wc-2{
+    z-index: 0;
+  }
+
+  .recipes-container {
+    gap: 0;
+    flex-direction: column;
+  }
+
+  .recipes-container .recipe{
+    margin-bottom: 1rem;
+  }
+
+  .social-container {
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+  }
+}
